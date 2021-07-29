@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    tools:context=".acceuil"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/blood_drop" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:padding="8dp">
+    <Button
+        android:id="@+id/button10"
+        android:textColor="#ffffff"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_style3"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Profil" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_below="@+id/button10"
+      android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Historique des dons" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_below="@+id/button11"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Fournir votre position geographique" />
+    <Button
+        android:id="@+id/button19"
+        android:layout_below="@+id/button12"
+        android:textColor="#ffffff"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_style3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Plus proche bank" />
+
+    <ImageButton
+        android:id="@+id/button13"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button19"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:background="@drawable/ic_power_settings_new_black_24dp"
+        android:text="Deconnecter"
+        android:textColor="#ffffff" />
+    </RelativeLayout>
+</LinearLayout>
+    </ScrollView>

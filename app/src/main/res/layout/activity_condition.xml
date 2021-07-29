@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f20025"
+    >
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#f20025"
+    android:padding="12dp">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/bienvenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sang +"
+        android:textColor="#ffff"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/bienvenutexte"
+        android:layout_below="@id/bienvenu"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Vérifier les conditions du don avant de continue."
+        android:textColor="#ffff"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_below="@id/bienvenutexte"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <CheckBox
+            android:id="@+id/cnd1"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="1. Bon état de santé ?"
+            android:textColor="#ffffff"/>
+        <CheckBox
+            android:id="@+id/cnd2"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="2. Age situe entre 18 et 60 ans pour les nouveaux donneurs et jusque ‘a 75 ans pour les donneurs réguliers ?"
+            android:textColor="#ffffff"/>
+        <CheckBox
+            android:id="@+id/cnd3"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="3. Poids d’au moins 50 kg ?"
+            android:textColor="#ffffff"/>
+        <CheckBox
+            android:id="@+id/cnd4"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="4. Aucune grande opération chirurgicale ni aucun accouchement au cours des 12 derniers mois ?"
+            android:textColor="#ffffff"/>
+        <CheckBox
+            android:id="@+id/cnd5"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="5. Pas de situation a risque (drogues, nouveaux partenaires sexuels ou partenaires multiples) ?"
+            android:textColor="#ffffff"/>
+
+        <CheckBox
+            android:id="@+id/cnd6"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="6. Pas de prise de certains médicaments ?"
+            android:textColor="#ffffff"/>
+
+        <CheckBox
+            android:id="@+id/cnd7"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="7. Délai d’attente après un séjour dans un pays ou sévissent des maladies infectieuses spécifique ?"
+            android:textColor="#ffffff"/>
+
+        <CheckBox
+            android:id="@+id/cnd8"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="left"
+            android:text="8. Aucun tatouage ni piercing au cours des quatre derniers mois ?"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/valider"
+            android:layout_below="@+id/oublier"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="Valider"
+            android:textSize="20dp"
+            android:background="@drawable/btn_style2"
+            android:gravity="center"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

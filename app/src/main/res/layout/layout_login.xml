@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f20025"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:padding="12dp">
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/bienvenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sang +"
+        android:textColor="#ffff"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/bienvenutexte"
+        android:layout_below="@id/bienvenu"
+        android:layout_marginTop="22dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="   Bienvenue dans Sang +, Déja connecté en tant qu'utilisateur enregistré ici."
+        android:textColor="#ffff"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_below="@id/bienvenutexte"
+        android:layout_marginTop="22dp"
+        android:id="@+id/dddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_style"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Entrez votre email"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_below="@id/email"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittext_style"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Mot de passe secret"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_visibility_off_black_24dp"
+            android:paddingRight="8dp"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/oublier"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de pass oublié?"
+            android:textColor="#ffff"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:padding="12dp"/>
+        <Button
+            android:id="@+id/connexion"
+            android:layout_below="@+id/oublier"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="Connexion"
+            android:background="@drawable/btn_style2"
+            android:gravity="center"
+            android:textColor="#ffff"/>
+        <TextView
+            android:id="@+id/pasdecompte"
+            android:layout_below="@+id/connexion"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous n'avez pas de compte?"
+            android:textColor="#ffff"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"/>
+        <Button
+            android:id="@+id/enregistrer"
+            android:layout_below="@+id/pasdecompte"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:text="Enregistrer"
+            android:background="@drawable/btn_style2"
+            android:gravity="center"
+            android:textColor="#ffff"/>
+
+    </RelativeLayout>
+</RelativeLayout>

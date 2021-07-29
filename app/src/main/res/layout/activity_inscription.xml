@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inscription">
+
+    <TextView
+        android:layout_above="@+id/relative"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="sans"
+        android:textColor="#f20025"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold"
+        android:text="Inscription" />
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:padding="16dp">
+        <EditText
+            android:id="@+id/nom"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Nom"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_below="@+id/nom"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Prenom"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/emaill"
+            android:layout_below="@+id/prenom"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/motpasse"
+            android:layout_below="@+id/emaill"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Mot de passe"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/cin"
+            android:layout_below="@+id/motpasse"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="CIN"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/telephone"
+            android:layout_below="@+id/cin"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="n° Telephone"
+            android:inputType="number"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+        <EditText
+            android:id="@+id/adresse"
+            android:layout_below="@+id/telephone"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/edite_style_inscri"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:hint="Adresse"
+            android:textColorHint="#fff"
+            android:textColor="#fff"/>
+
+
+
+
+
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/inscrir"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+    android:background="@drawable/addusrer"/>
+
+
+</RelativeLayout>

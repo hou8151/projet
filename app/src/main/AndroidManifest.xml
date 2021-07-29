@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mh.test">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_blood"
+        android:label="Sang +"
+        android:roundIcon="@mipmap/ic_blood_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ConditionActivity"
+            android:theme="@style/noactionbar"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".historique"
+            android:theme="@style/noactionbar" />
+        <activity
+            android:name=".Profil_donnateur"
+            android:theme="@style/noactionbar">
+
+        </activity>
+        <activity
+            android:name=".acceuil"
+            android:theme="@style/noactionbar" />
+        <activity
+            android:name=".Inscription"
+            android:theme="@style/noactionbar" />
+        <activity
+            android:name=".preload"
+            android:theme="@style/noactionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>/>
+        </activity>
+        <activity
+            android:name=".login"
+            android:theme="@style/noactionbar" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
